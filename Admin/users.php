@@ -275,7 +275,7 @@ if ($page == "All") {
             values (?,?,?,?,?,?,now());
             ");
             $statement->execute(array($id,$user,$email,$hashpass,$status,$role));
-            $result=$statement->fetchAll();
+            // $result=$statement->fetchAll();
 
             echo "<h2 class='alert alert-success text-center p-3'>New User Added Successfully</h2>";
             header('refresh:3;url=users.php');

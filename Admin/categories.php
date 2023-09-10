@@ -147,7 +147,7 @@ if ($page == 'all') {
         `status` =? where category_id =? 
         ");
         $statement->execute(array($id,$title,$desc,$status,$userId));
-        $result=$statement->fetchAll();
+        // $result=$statement->fetchAll();
 
         echo "<h1 class='alert alert-success text-center'> categories Edited Successfully </h1>" ;
         header("refresh:3;url=categories.php");
@@ -164,7 +164,7 @@ if ($page == 'all') {
 
     $statement=$connect->prepare("DELETE FROM categories where category_id =?");
     $statement->execute(array($userId));
-    $result=$statement->fetchAll();
+    // $result=$statement->fetchAll();
 
     echo "<h1 class='alert alert-danger text-center'>categories Deleted Successfully </h1>" ;
     header('refresh:3;url=categories.php');
@@ -221,7 +221,7 @@ if ($page == 'all') {
             VALUES (?,?,?,?,now());
             ");
             $statement->execute(array($id,$title,$desc,$status));
-            $result=$statement->fetchAll();
+            // $result=$statement->fetchAll();
 
             echo "<h1 class='alert alert-success text-center'>categories Added Successfully </h1>" ;
             header('refresh:3;url=categories.php');
