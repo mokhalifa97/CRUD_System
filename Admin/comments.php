@@ -19,8 +19,8 @@ if ($page == 'all') {
 
 
   <div class="card mt-5 bg-dark text-light">
-    <div class="card-header">
-      Comments <span class="badge badge-primary"> <?php echo $commentCount ?></span>
+    <div class="card-header d-flex justify-content-between align-item-center">
+      <h5>Comments <span class="badge badge-primary"> <?php echo $commentCount ?></span></h5>
       <a href="?page=addNew" class="btn btn-success">Add New Comment</a>
     </div>
     <div class="card-body">

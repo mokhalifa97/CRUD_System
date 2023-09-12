@@ -16,8 +16,8 @@ if ($page == 'all') {
 ?>
 
     <div class="card mt-5 bg-dark text-light ">
-        <div class="card-header">
-            Categories <span class="badge badge-primary"><?php echo $catCount; ?></span>
+        <div class="card-header d-flex justify-content-between align-item-center">
+            <h5>Categories <span class="badge badge-primary"><?php echo $catCount; ?></span></h5>
             <a href="?page=addUser" class="btn btn-success">Add New Categories</a>
         </div>
         <div class="card-body">
@@ -29,6 +29,7 @@ if ($page == 'all') {
                         <th scope="col">description</th>
                         <th scope="col">status</th>
                         <th scope="col">created_at</th>
+                        <th scope="col">operation</th>
                     </tr>
                 </thead>
                 <tbody>

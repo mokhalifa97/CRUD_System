@@ -16,8 +16,8 @@ if (isset($_GET['page'])) {
 if ($page == "All") {
 ?>
     <div class="card mt-5 bg-dark text-light ">
-        <div class="card-header">
-            Users <span class="badge badge-primary"><?php echo $resultuser; ?></span>
+        <div class="card-header d-flex justify-content-between align-item-center">
+            <h5>Users <span class="badge badge-primary"><?php echo $resultuser; ?></span></h5>
             <a href="?page=newuser" class="btn btn-success">Add User</a>
         </div>
         <div class="card-body">

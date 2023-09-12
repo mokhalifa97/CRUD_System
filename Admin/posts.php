@@ -19,8 +19,8 @@ if ($page == 'all') {
 
 
   <div class="card mt-5 bg-dark text-light">
-    <div class="card-header">
-      Posts <span class="badge badge-primary"> <?php echo $postCount ?> </span>
+    <div class="card-header d-flex justify-content-between align-item-center">
+      <h5>Posts <span class="badge badge-primary"> <?php echo $postCount ?> </span></h5>
       <a href="?page=addNew" class="btn btn-success">Add New Post</a>
     </div>
     <div class="card-body">
